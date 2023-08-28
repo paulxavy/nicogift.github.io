@@ -30,15 +30,7 @@
 console.log("Digit 2:", cday2);
 console.log("Digit 3:", cday3);
 
-  setInterval(function() {
-    dayPlay();
-  }, 1.8e+6);
-  setInterval(function() {
-    day2Play();
-  }, 1.8e+6);
-  setInterval(function() {
-    day3Play();
-  }, 1.8e+6);
+  
   function dayPlay() {
     $('body').addClass('play');
     $('.dayPlay li').toggleClass('active before');
@@ -59,5 +51,6 @@ console.log("Digit 3:", cday3);
       
       $('.day3Play .active .inn').text(cday3);
   }
-
-  
+document.addEventListener("DOMContentLoaded", dayPlay);
+document.addEventListener("DOMContentLoaded", day2Play);
+document.addEventListener("DOMContentLoaded", day3Play);
