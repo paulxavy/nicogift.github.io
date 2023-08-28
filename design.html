@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+    <title>Nico ♥</title>
+</head>
+<body>
+    <h1 class="titulo-especial">Dias extrañandote</h1>  
+    
+    <div class="container">
+        <ul class="flip dayPlay">
+            <li class="before">
+                <a href="#">
+                    <div class="up">
+                        <div class="shadow"></div>
+                        <div class="inn">0</div>
+                    </div>
+                    <div class="down">
+                        <div class="shadow"></div>
+                        <div class="inn">0</div>
+                    </div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <div class="up">
+                        <div class="shadow"></div>
+                        <div class="inn">0</div>
+                    </div>
+                    <div class="down">
+                        <div class="shadow"></div>
+                        <div class="inn">0</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="flip day2Play">
+          <li class="before">
+              <a href="#">
+                  <div class="up">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+              </a>
+          </li>
+          <li class="active">
+              <a href="#">
+                  <div class="up">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+              </a>
+          </li>
+      </ul>
+      <ul class="flip day3Play">
+          <li class="before">
+              <a href="#">
+                  <div class="up">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+              </a>
+          </li>
+          <li class="active">
+              <a href="#">
+                  <div class="up">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+                  <div class="down">
+                      <div class="shadow"></div>
+                      <div class="inn">0</div>
+                  </div>
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="separate"></div>
+  <section class="container-c">
+    <ul id="current-volunteers">Faltan <span id="left"></span> días para volver a verte<span class="sad-cat"></span></ul>
+    <script>
+          let startDate1 = new Date(2023, 7, 26); // August is month 7 (0-indexed)
+            let currentDate2 = new Date();
+            // Calculate the difference in days
+            let daysElapsed2 = Math.floor((currentDate2 - startDate1) / (24 * 60 * 60 * 1000));
+  
+
+        var leftElement = document.getElementById("left");
+        if (leftElement) {
+            leftElement.innerHTML = 365 - daysElapsed2;
+            } else {
+            console.error("Element with id 'left' not found.");
+        }
+    </script>  
+</section>
+</body>
+</html>
